@@ -18,7 +18,7 @@
     "scripts": {
         "clean": "rimraf -rf build && rimraf -rf dist",
         "dev": "run-p deploy",
-        "deploy": "wait-on faucet & truffle compile && truffle migrate --reset",
+        "deploy": "npx truffle compile && npx truffle migrate --reset",
         "test": "npx truffle test",
         "faucet": "node ./src/lib/faucet",
         "postinstall": "node ./src/lib/faucet"
